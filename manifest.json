@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "YA:",
+  "description": "Yet answered! (ya lo busque)",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "YA!"
+  },
+
+  "commands": {
+    "bm": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "YA Bookmark!"
+    }
+  },
+
+  "background": {
+    "scripts": ["events.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "bookmarks",
+    "https://ajax.googleapis.com/"
+  ]
+}
